@@ -2,46 +2,24 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Untitled</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>Hello World</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
   <div id="root"></div>
-  <!--
-    JSPM Generator Import Map
-    Edit URL: https://generator.jspm.io/#0+JhYGBiDs0rySzJSU1hKEpNTC7RTcnPdTC00DPSM9BPzslMzSuBiEPFAJEve1szAA
-  -->
-  <script type="importmap">
-  {
-    "imports": {
-      "react": "https://ga.jspm.io/npm:react@18.2.0/index.js",
-      "react-dom/client": "https://ga.jspm.io/npm:react-dom@18.2.0/client.js"
-    },
-    "scopes": {
-      "https://ga.jspm.io/": {
-        "react-dom": "https://ga.jspm.io/npm:react-dom@18.2.0/index.js",
-        "scheduler": "https://ga.jspm.io/npm:scheduler@0.23.0/index.js"
-      }
-    }
-  }
-  </script>
 
-  <!-- ES Module Shims: Import maps polyfill for olrder browsers without import maps support (eg Safari 16.3) -->
-  <script async src="https://ga.jspm.io/npm:es-module-shims@1.7.3/dist/es-module-shims.js"
-    crossorigin="anonymous"></script>
+  <script type="text/babel">
 
-  <script type="module">
-    import React, { useEffect } from "react";
-    import { createRoot } from "react-dom/client";
-
-    // Write main module code here, or as a separate file with a "src" attribute on the module script.
-    // console.log(react, reactDomClient);
     const App = () => {
-      useEffect(() => {
-        confetti();
-      }, []);
+      // useEffect(() => {
+      //   confetti();
+      // }, []);
 
       return (
         <div>
@@ -51,8 +29,10 @@
       );
     };
 
-    const root = createRoot(document.getElementById("root"));
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
     root.render(<App />);
+
   </script>
 </body>
 
