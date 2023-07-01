@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "react": "https://esm.sh/npm:react@18.2.0/index.js",
+    "react-dom/client": "https://esm.sh/npm:react-dom@18.2.0/client.js"
+  },
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "react-dom": "https://ga.jspm.io/npm:react-dom@18.2.0/index.js",
+      "scheduler": "https://ga.jspm.io/npm:scheduler@0.23.0/index.js"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "quad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.tsx",
+  "scripts": {
+    "start": "deno task run -A --watch main.tsx"
+  },
+
+  "author": "",
+  "license": "ISC"
+}
